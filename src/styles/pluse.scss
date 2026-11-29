@@ -1,8 +1,5 @@
 .pluse {
-
-
-
-  &__content{
+  &__content {
     display: flex;
     flex-direction: column;
     gap: 170px;
@@ -19,14 +16,15 @@
       width: 582px;
       height: 388px;
 
-      @include on-tablet{
+      @include on-tablet {
         width: 360px;
         height: 415px;
       }
+
       @include on-mobile {
         order: 1;
-        height: 212px;
         width: 259px;
+        height: 212px;
         margin-bottom: 20px;
       }
     }
@@ -37,8 +35,8 @@
       object-fit: cover;
 
       @include on-mobile {
-        height: 212px;
         width: 259px;
+        height: 212px;
       }
     }
     &-label {
@@ -55,7 +53,7 @@
       letter-spacing: 0%;
       vertical-align: middle;
 
-      @include on-tablet{
+      @include on-tablet {
         max-width: 340px;
         font-size: 36px;
         line-height: 46px;
@@ -63,6 +61,7 @@
 
       @include on-mobile {
         order: 0;
+
         max-width: none;
         margin-bottom: 14px;
 
@@ -90,16 +89,18 @@
       letter-spacing: 0%;
       vertical-align: middle;
 
-      @include on-tablet{
+      @include on-tablet {
         max-width: 340px;
       }
 
       @include on-mobile {
         order: 2;
-        font-size: 16px;
+
+        max-width: 260px;
         margin-top: 0;
         margin-bottom: 30px;
-        max-width: 260px;
+
+        font-size: 16px;
       }
     }
     &-link {
@@ -120,12 +121,11 @@
       letter-spacing: 0%;
       vertical-align: middle;
 
-      &::after{
+      &::after {
         content: '';
         width: 64px;
         height: 1px;
-        background-color: #0DB2B3;
-
+        background-color: #0db2b3;
       }
 
       @include on-mobile {

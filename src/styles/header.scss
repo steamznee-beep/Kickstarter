@@ -1,7 +1,7 @@
 .header {
   &__content {
     display: flex;
-    align-items: centerw;
+    align-items: center;
     justify-content: space-between;
 
     &-right {
@@ -10,9 +10,13 @@
       align-items: center;
     }
 
-    &-left{
+    &-left {
       display: flex;
       align-items: center;
+    }
+
+    @include on-tablet {
+      gap: 24px;
     }
   }
 
@@ -26,11 +30,12 @@
     text-decoration: none;
     letter-spacing: 0%;
 
-    &-burger-menu{
-      @include on-desktop{
+    &-burger-menu {
+      @include on-desktop {
         display: none;
       }
     }
+
     @include on-mobile {
       display: none;
     }
@@ -55,19 +60,24 @@
 
     transition: background-color linear 0.3s;
 
-    &:hover{
+    &:hover {
       background-color: #131313;
     }
+
     @include on-mobile {
       display: none;
     }
   }
 
-  &__language{
-    color: #BDBDBD;
+  &__language {
+    color: #bdbdbd;
 
     @include on-mobile {
       display: none;
     }
+  }
+
+  &__logo {
+    display: block;
   }
 }

@@ -9,8 +9,8 @@
     flex-direction: column;
     gap: 62px;
 
-    &-top{
-      @include on-tablet{
+    &-top {
+      @include on-tablet {
         display: none;
       }
     }
@@ -24,6 +24,7 @@
       @include on-tablet {
         flex-wrap: wrap;
       }
+
       @include on-mobile {
         justify-content: start;
       }
@@ -50,11 +51,18 @@
     text-decoration: none;
     letter-spacing: 0%;
     vertical-align: middle;
+
+    display: inline-block;
+    transition: all 0.4s linear;
+    &:hover {
+      color: #131313;
+      transform: scale(1.05);
+    }
   }
 
   &__span {
     font-weight: 700;
-    color: #1313;
+    color: #131313;
   }
 
   &__card {
@@ -87,36 +95,25 @@
       font-weight: 400;
       font-style: Regular;
       line-height: 21px;
-      color: #7C7C7C;
+      color: #7c7c7c;
       text-align: center;
       letter-spacing: 0%;
       vertical-align: middle;
     }
-    &-2{
-
+    &-2 {
       @include on-mobile {
         display: none;
       }
     }
-    &-3{
-
+    &-3 {
       @include on-mobile {
         display: none;
       }
     }
-    &-4{
-
+    &-4 {
       @include on-mobile {
         display: none;
       }
-    }
-  }
-
-  &__item{
-
-    transition: transform 0.4s linear;
-    &:hover{
-      transform: scale(1.04);
     }
   }
 }

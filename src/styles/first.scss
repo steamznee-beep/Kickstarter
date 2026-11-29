@@ -1,6 +1,14 @@
 .first {
   &__content {
     display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+
+    @include on-tablet {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
 
     @include on-mobile {
       flex-direction: column;
@@ -19,21 +27,22 @@
         vertical-align: middle;
 
         @include on-tablet {
-        margin-bottom:30px ;
-        font-size: 48px;
+          margin-bottom: 30px;
+          font-size: 48px;
           line-height: 62px;
-      }
-      @include on-mobile {
-        font-size: 40px;
-        line-height: 52px;
-      }
+        }
+
+        @include on-mobile {
+          font-size: 40px;
+          line-height: 52px;
+        }
       }
     }
   }
 
   &__image {
-    width: 816px;
-    height: 464px;
+    width: min(57vw, 816px);
+    height: auto;
 
     @include on-tablet {
       box-sizing: border-box;
@@ -41,10 +50,10 @@
       height: 317px;
     }
 
-    @include on-mobile{
+    @include on-mobile {
+      box-sizing: border-box;
       width: 100%;
       max-width: 320px;
-      box-sizing: border-box;
       height: auto;
     }
   }

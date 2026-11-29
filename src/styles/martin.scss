@@ -10,6 +10,8 @@
     justify-content: center;
 
     &-text {
+      max-width: 786px;
+
       font-family: Inter, Arial, Helvetica, sans-serif;
       font-size: 24px;
       font-weight: 700;
@@ -19,12 +21,11 @@
       text-align: center;
       letter-spacing: 0%;
       vertical-align: middle;
-      max-width: 786px;
 
       @include on-mobile {
+        max-width: 260px;
         font-size: 14px;
         line-height: 20px;
-        max-width: 260px;
       }
     }
 
@@ -60,6 +61,7 @@
       letter-spacing: 0%;
       vertical-align: middle;
     }
+
     @include on-mobile {
       max-width: 260px;
     }
@@ -72,6 +74,7 @@
       z-index: 1;
       width: 233px;
     }
+
     @include on-mobile {
       justify-content: start;
     }

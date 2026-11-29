@@ -45,8 +45,8 @@
       }
 
       @include on-mobile {
-        width: 260px;
         box-sizing: border-box;
+        width: 260px;
         padding: 12px 20px;
       }
 
@@ -58,16 +58,14 @@
         border-color: #0c797a;
       }
 
+      &:-webkit-autofill {
+        box-shadow: 0 0 0 1000px #fff inset !important;
+
+        -webkit-text-fill-color: #111 !important;
+      }
+
       &:not(:placeholder-shown):valid {
         border-color: #0db2b3;
-      }
-      &:-webkit-autofill,
-      &:-webkit-autofill:hover,
-      &:-webkit-autofill:focus,
-      &:-webkit-autofill:active {
-        -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
-        box-shadow: 0 0 0 1000px #ffffff inset !important;
-        -webkit-text-fill-color: #111111 !important;
       }
     }
 
@@ -96,9 +94,9 @@
       }
 
       @include on-mobile {
+        box-sizing: border-box;
         width: 260px;
         height: 128px;
-        box-sizing: border-box;
         padding: 12px 20px;
       }
 
@@ -165,6 +163,7 @@
         font-size: 36px;
         line-height: 46px;
       }
+
       @include on-mobile {
         max-width: 260px;
       }
